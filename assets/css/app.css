@@ -1,0 +1,53 @@
+/* ==================================================
+   VARIABLES GLOBALES
+================================================== */
+:root {
+  --white: #fff;
+  --black: #000;
+  --darkGray: #444;
+  --light: #d0d0d0;
+  --dark: #222;
+  --bns: #f2eee8;
+  --bns-light: #f8f7f4;
+  --bns-dark: #c7b69c;
+  --snb: #e5e2dc;
+  --btnBackground: #b5ad9c;
+  --btnBackHover: #605948;
+  --snb-light: #f2f1ee;
+  --snb-dark: #b5ad9c;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --error: #f54a45;
+  --success: #7dc67d;
+}
+
+/* ==================================================
+     RESET + BASE GLOBAL
+  ================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-display: swap;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--gray-900);
+  background-color: var(--white);
+  scroll-behavior: smooth;
+}
