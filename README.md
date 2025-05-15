@@ -19,7 +19,7 @@ La carpeta principal del proyecto es `vehm/`, y contiene la siguiente estructura
 │   │   ├── hero.css            ← Estilos de la sección principal (u otras secciones)
 │   │   ├── responsive.css      ← Media queries para responsive design
 │   └── /js/
-│       └── main.js             ← Scripts generales de la página
+│       └── app.js             ← Scripts generales de la página
 ```
 ---
 
