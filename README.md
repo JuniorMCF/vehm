@@ -16,7 +16,6 @@ La carpeta principal del proyecto es `vehm/`, y contiene la siguiente estructura
 │   │   ├── app.css             ← Variables globales, reset y estilos base
 │   │   ├── header.css          ← Estilos del encabezado
 │   │   ├── footer.css          ← Estilos del pie de página
-│   │   ├── hero.css            ← Estilos de la sección principal (u otras secciones)
 │   │   ├── responsive.css      ← Media queries para responsive design
 │   └── /js/
 │       └── app.js             ← Scripts generales de la página
