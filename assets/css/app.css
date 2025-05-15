@@ -45,9 +45,33 @@ body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-display: swap;
-  font-size: 1rem;
+  font-size: 1.09rem;
   line-height: 1.5;
   color: var(--gray-900);
   background-color: var(--white);
   scroll-behavior: smooth;
+}
+
+.btn-sepia,
+.btn-white,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.text-gray,
+.text-gray-hover:hover,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--darkGray) !important;
+}
+.font-weight-bold{
+    font-weight: 500 !important;
 }

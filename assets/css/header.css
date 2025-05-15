@@ -1,0 +1,43 @@
+header {
+  z-index: 3;
+}
+
+nav a:hover {
+  color: black;
+}
+.nav-item-wrapper {
+  position: relative;
+}
+img.logo-white {
+  filter: brightness(0) invert(1); /* Cambia a blanco */
+}
+.sublist-blog {
+  position: fixed;
+  top: 68px; /* altura del header */
+  left: 0;
+  width: 100vw;
+  background-color: var(--bns-light, #f8f7f4);
+  z-index: 3;
+  padding: 3rem 3rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+.sublist-dropdown {
+  position: absolute;
+  top: 55px; /* altura del padre */
+  background-color: var(--bns-light, #f8f7f4);
+  z-index: 3;
+  padding: 1.5rem 3rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+.nav-item-wrapper:hover .sublist-blog {
+  opacity: 1;
+  visibility: visible;
+}
+.nav-item-wrapper:hover .sublist-dropdown {
+  opacity: 1;
+  visibility: visible;
+}
