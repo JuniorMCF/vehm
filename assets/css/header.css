@@ -20,13 +20,13 @@ header {
   color: white !important;
   transition: color 0.3s ease;
 }
-.offcanvas-menu .nav-link {
-  color: black !important;
-}
+
 .main-header.scrolled .nav-link {
   color: black !important;
 }
-
+.offcanvas-menu .nav-link {
+  color: black !important;
+}
 .logo {
   filter: brightness(0) invert(1);
   transition: filter 0.3s ease;
@@ -65,7 +65,7 @@ nav a:hover {
 }
 .sublist-blog {
   position: fixed;
-  top:70px; /* altura del header */
+  top: 70px; /* altura del header */
   left: 0;
   width: 100vw;
   background-color: var(--bns-light, #f8f7f4);
