@@ -1,6 +1,53 @@
+/** Header container **/
 header {
   z-index: 3;
 }
+.main-header {
+  position: fixed; /* cambio clave */
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-header.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.main-header .nav-link {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+.offcanvas-menu .nav-link {
+  color: black !important;
+}
+.main-header.scrolled .nav-link {
+  color: black !important;
+}
+
+.logo {
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
+
+.main-header.scrolled .logo {
+  filter: none;
+}
+
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.main-header.scrolled .menu-toggle {
+  color: black;
+}
+/**end header container**/
 
 nav a:hover {
   color: black;
@@ -8,12 +55,17 @@ nav a:hover {
 .nav-item-wrapper {
   position: relative;
 }
-img.logo-white {
-  filter: brightness(0) invert(1); /* Cambia a blanco */
+.logo {
+  filter: brightness(0) invert(1) !important; /* blanco */
+  transition: filter 0.3s ease !important;
+}
+
+.main-header.scrolled .logo {
+  filter: none !important; /* negro original */
 }
 .sublist-blog {
   position: fixed;
-  top: 68px; /* altura del header */
+  top:70px; /* altura del header */
   left: 0;
   width: 100vw;
   background-color: var(--bns-light, #f8f7f4);

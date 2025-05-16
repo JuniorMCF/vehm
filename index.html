@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/css/app.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/hero.css" />
+    <link rel="stylesheet" href="assets/css/contact-us.css" />
 
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,282 +37,363 @@
       defer=""
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
     ></script>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js" defer></script>
   </head>
-  <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+  <body>
     <!-- header nav-->
-    <header class="position-fixed w-100 z-4 bg-transparent shadow-none">
-      <div class="container py-3">
-        <div class="row align-items-center">
-          <!-- Logo -->
-          <div class="col-6 col-lg-3">
-            <a href="/" title="VEHM" aria-label="VEHM Home">
-              <img
-                class="logo-white"
-                src="assets/img/vehm-logo.svg"
-                alt="VEHM Logo"
-                width="140"
-                height="40"
-                loading="lazy"
-              />
-            </a>
-          </div>
+    <header class="main-header">
+      <!-- Nuevo contenedor libre de Bootstrap -->
+      <div class="header-wrapper">
+        <div class="container py-3">
+          <div class="row align-items-center">
+            <!-- Logo -->
+            <div class="col-6 col-lg-3">
+              <a href="/" title="VEHM" aria-label="VEHM Home">
+                <img
+                  class="logo"
+                  src="assets/img/vehm-logo.svg"
+                  alt="VEHM Logo"
+                  width="140"
+                  height="40"
+                  loading="lazy"
+                />
+              </a>
+            </div>
 
-          <!-- Menú Desktop -->
-          <nav class="col-lg-9 d-none d-lg-block">
-            <ul class="nav justify-content-end">
-              <li class="nav-item">
-                <a class="nav-link text-white font-weight-bold" href="/"
-                  >Home</a
-                >
-              </li>
-              <div class="nav-item-wrapper">
+            <!-- Menú Desktop -->
+            <nav class="col-lg-9 d-none d-lg-block">
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link font-weight-bold" href="/">Home</a>
+                </li>
+                <div class="nav-item-wrapper">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link font-weight-bold"
+                      href="#"
+                      aria-expanded="false"
+                    >
+                      Destinations <i class="bi bi-chevron-down ms-2"></i>
+                    </a>
+                    <ul class="sublist-dropdown">
+                      <li class="dropdown-item py-2">
+                        <a href="#">Punta Mita | México</a>
+                      </li>
+                      <li class="dropdown-item py-2">
+                        <a href="#">Riviera Nayarit | México</a>
+                      </li>
+                      <li class="dropdown-item py-2">
+                        <a href="#">Riviera Maya | México</a>
+                      </li>
+                      <li class="dropdown-item py-2">
+                        <a href="#">Careyes | México</a>
+                      </li>
+                    </ul>
+                  </li>
+                </div>
+                <div class="nav-item-wrapper">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link font-weight-bold"
+                      href="#"
+                      aria-expanded="false"
+                    >
+                      VEHM’s World
+                    </a>
+                    <ul class="sublist-dropdown text-center">
+                      <li class="dropdown-item py-2">
+                        <a href="#">About us</a>
+                      </li>
+                      <li class="dropdown-item py-2">
+                        <a href="#">Services</a>
+                      </li>
+                      <li class="dropdown-item py-2">
+                        <a href="#">FAQ</a>
+                      </li>
+                    </ul>
+                  </li>
+                </div>
                 <li class="nav-item">
                   <a
-                    class="nav-link text-white font-weight-bold"
-                    href="#"
-                    aria-expanded="false"
+                    class="nav-link font-weight-bold"
+                    href="https://3d.casa/360/vehm/"
+                    >Interactive Map</a
                   >
-                    Destinations <i class="bi bi-chevron-down ms-2"></i>
-                  </a>
-                  <ul class="sublist-dropdown">
-                    <li class="dropdown-item py-2">
-                      <a href="#">Punta Mita | México</a>
-                    </li>
-                    <li class="dropdown-item py-2">
-                      <a href="#">Riviera Nayarit | México</a>
-                    </li>
-                    <li class="dropdown-item py-2">
-                      <a href="#">Riviera Maya | México</a>
-                    </li>
-                    <li class="dropdown-item py-2">
-                      <a href="#">Careyes | México</a>
-                    </li>
-                  </ul>
                 </li>
-              </div>
-              <div class="nav-item-wrapper">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link text-white font-weight-bold"
-                    href="#"
-                    aria-expanded="false"
-                  >
-                    VEHM’s World
-                  </a>
-                  <ul class="sublist-dropdown text-center">
-                    <li class="dropdown-item py-2">
-                      <a class="dropdown-item" href="#">About us</a>
-                    </li>
-                    <li class="dropdown-item py-2">
-                      <a class="dropdown-item" href="#">Services</a>
-                    </li>
-                    <li class="dropdown-item py-2">
-                      <a class="dropdown-item" href="#">FAQ</a>
-                    </li>
-                  </ul>
-                </li>
-              </div>
-              <li class="nav-item">
-                <a
-                  class="nav-link text-white font-weight-bold"
-                  href="https://3d.casa/360/vehm/"
-                  >Interactive Map</a
-                >
-              </li>
-              <div class="nav-item-wrapper">
-                <li class="nav-item">
-                  <a
-                    href="#"
-                    class="nav-link text-white font-weight-bold"
-                    aria-expanded="false"
-                    title="Blog"
-                  >
-                    Blog <i class="bi bi-chevron-down ms-2"></i>
-                  </a>
+                <div class="nav-item-wrapper">
+                  <li class="nav-item">
+                    <a
+                      href="#"
+                      class="nav-link font-weight-bold"
+                      aria-expanded="false"
+                      title="Blog"
+                    >
+                      Blog <i class="bi bi-chevron-down ms-2"></i>
+                    </a>
 
-                  <!-- Mega menú del blog -->
-                  <div class="sublist-blog">
-                    <div class="container">
-                      <div class="row blog-posts g-4">
-                        <!-- Tarjeta 1 -->
-                        <div class="col-12 col-md-6 col-lg-3">
-                          <a href="#" class="d-block text-decoration-none">
-                            <div
-                              class="position-relative rounded overflow-hidden"
-                            >
-                              <img
-                                src="assets/img/villa.webp"
-                                alt="Discover Villa Samba"
-                                class="img-fluid"
-                                style="object-fit: cover"
-                              />
+                    <!-- Mega menú del blog -->
+                    <div class="sublist-blog">
+                      <div class="container">
+                        <div class="row blog-posts g-4">
+                          <!-- Tarjeta 1 -->
+                          <div class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="d-block text-decoration-none">
                               <div
-                                class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50"
+                                class="position-relative rounded overflow-hidden"
                               >
-                                <h5 class="text-white m-0">Read More</h5>
+                                <img
+                                  src="assets/img/villa.webp"
+                                  alt="Discover Villa Samba"
+                                  class="img-fluid"
+                                  style="object-fit: cover"
+                                />
+                                <div
+                                  class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50"
+                                >
+                                  <h5 class="text-white m-0">Read More</h5>
+                                </div>
                               </div>
-                            </div>
-                            <h6 class="mt-2 text-dark">
-                              Discover Villa Samba: Your Luxurious Coastal
-                              Escape in Punta Mita
-                            </h6>
-                          </a>
-                        </div>
+                              <h6 class="mt-2 text-dark">
+                                Discover Villa Samba: Your Luxurious Coastal
+                                Escape in Punta Mita
+                              </h6>
+                            </a>
+                          </div>
 
-                        <!-- Tarjeta 2 -->
-                        <div class="col-12 col-md-6 col-lg-3">
-                          <a href="#" class="d-block text-decoration-none">
-                            <div
-                              class="position-relative rounded overflow-hidden"
-                            >
-                              <img
-                                src="assets/img/golf.webp"
-                                alt="Punta Mita Golf Courses"
-                                class="img-fluid"
-                                style="object-fit: cover"
-                              />
+                          <!-- Tarjeta 2 -->
+                          <div class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="d-block text-decoration-none">
                               <div
-                                class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50"
+                                class="position-relative rounded overflow-hidden"
                               >
-                                <h5 class="text-white m-0">Read More</h5>
+                                <img
+                                  src="assets/img/golf.webp"
+                                  alt="Punta Mita Golf Courses"
+                                  class="img-fluid"
+                                  style="object-fit: cover"
+                                />
+                                <div
+                                  class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50"
+                                >
+                                  <h5 class="text-white m-0">Read More</h5>
+                                </div>
                               </div>
-                            </div>
-                            <h6 class="mt-2 text-dark">
-                              Punta Mita Golf Courses: The Crown Jewels of
-                              Luxury Golf
-                            </h6>
-                          </a>
-                        </div>
+                              <h6 class="mt-2 text-dark">
+                                Punta Mita Golf Courses: The Crown Jewels of
+                                Luxury Golf
+                              </h6>
+                            </a>
+                          </div>
 
-                        <!-- Tarjeta 3 -->
-                        <div class="col-12 col-md-6 col-lg-3">
-                          <a href="#" class="d-block text-decoration-none">
-                            <div
-                              class="position-relative rounded overflow-hidden"
-                            >
-                              <img
-                                src="assets/img/kitchens.webp"
-                                alt="Hector Kitchens Fish Market"
-                                class="img-fluid"
-                                style="object-fit: cover"
-                              />
+                          <!-- Tarjeta 3 -->
+                          <div class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="d-block text-decoration-none">
                               <div
-                                class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50"
+                                class="position-relative rounded overflow-hidden"
                               >
-                                <h5 class="text-white m-0">Read More</h5>
+                                <img
+                                  src="assets/img/kitchens.webp"
+                                  alt="Hector Kitchens Fish Market"
+                                  class="img-fluid"
+                                  style="object-fit: cover"
+                                />
+                                <div
+                                  class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50"
+                                >
+                                  <h5 class="text-white m-0">Read More</h5>
+                                </div>
                               </div>
-                            </div>
-                            <h6 class="mt-2 text-dark">
-                              Fish Market Tour: Culinary Adventure in La Cruz
-                            </h6>
-                          </a>
-                        </div>
+                              <h6 class="mt-2 text-dark">
+                                Fish Market Tour: Culinary Adventure in La Cruz
+                              </h6>
+                            </a>
+                          </div>
 
-                        <!-- Tarjeta 4 -->
-                        <div class="col-12 col-md-6 col-lg-3">
-                          <a href="#" class="d-block text-decoration-none">
-                            <div
-                              class="position-relative rounded overflow-hidden"
-                            >
-                              <img
-                                src="assets/img/beach.webp"
-                                alt="Best Beach Clubs in Punta Mita"
-                                class="img-fluid"
-                                style="object-fit: cover"
-                              />
+                          <!-- Tarjeta 4 -->
+                          <div class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="d-block text-decoration-none">
                               <div
-                                class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50"
+                                class="position-relative rounded overflow-hidden"
                               >
-                                <h5 class="text-white m-0">Read More</h5>
+                                <img
+                                  src="assets/img/beach.webp"
+                                  alt="Best Beach Clubs in Punta Mita"
+                                  class="img-fluid"
+                                  style="object-fit: cover"
+                                />
+                                <div
+                                  class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50"
+                                >
+                                  <h5 class="text-white m-0">Read More</h5>
+                                </div>
                               </div>
-                            </div>
-                            <h6 class="mt-2 text-dark">
-                              Exploring the Best Beach Clubs in Punta Mita
-                            </h6>
-                          </a>
+                              <h6 class="mt-2 text-dark">
+                                Exploring the Best Beach Clubs in Punta Mita
+                              </h6>
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </li>
+                </div>
+                <li class="nav-item">
+                  <a class="nav-link font-weight-bold" href="#">Contact</a>
                 </li>
-              </div>
+              </ul>
+            </nav>
+
+            <!-- Menú Mobile (toggle) -->
+            <div class="col-6 d-lg-none text-end">
+              <button
+                class="btn menu-toggle"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu"
+                aria-controls="mobileMenu"
+              >
+                <i class="bi bi-list"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Offcanvas Mobile Menu -->
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="mobileMenu"
+          aria-labelledby="mobileMenuLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 id="mobileMenuLabel">Menú</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
               <li class="nav-item">
-                <a class="nav-link text-white font-weight-bold" href="#"
-                  >Contact</a
+                <a class="nav-link" href="#">Punta Mita</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Riviera Nayarit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Riviera Maya</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Careyes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://3d.casa/360/vehm/"
+                  >Interactive Map</a
                 >
               </li>
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Contact</a>
+              </li>
             </ul>
-          </nav>
-
-          <!-- Menú Mobile (toggle) -->
-          <div class="col-6 d-lg-none text-end">
-            <button
-              class="btn btn-outline-secondary"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#mobileMenu"
-              aria-controls="mobileMenu"
-            >
-              <i class="bi bi-list"></i>
-            </button>
           </div>
         </div>
       </div>
-
-      <!-- Offcanvas Mobile Menu -->
-      <div
-        class="offcanvas offcanvas-end"
-        tabindex="-1"
-        id="mobileMenu"
-        aria-labelledby="mobileMenuLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 id="mobileMenuLabel">Menú</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Cerrar"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Punta Mita</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Riviera Nayarit</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Riviera Maya</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Careyes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://3d.casa/360/vehm/"
-                >Interactive Map</a
-              >
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </header>
-    <section class="section-hero"></section>
 
     <!-- end header nav -->
+
+    <!-- Hero section-->
+    <section class="section-hero px-4">
+      <div class="overlay"></div>
+      <div class="container hero-content">
+        <h1 class="text-white font-weight-bold py-2">
+          Effortless Luxury, Just a Message Away
+        </h1>
+        <h5 class="text-white hero-wrap font-weight-bold py-2">
+          At VEHM, we believe that true luxury is seamless.
+        </h5>
+        <p class="text-white hero-wrap py-2">
+          Whether you prefer a direct call, a personalized visit, or an instant
+          chat, our team is ready to assist you with every detail. Your perfect
+          stay begins here.
+        </p>
+      </div>
+    </section>
+
+    <section class="container section-contact-us px-4">
+      <div class="row g-4">
+        <!-- Formulario -->
+        <div class="col-12 col-md-7">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Your full name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                placeholder="Your phone number"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="5"
+                placeholder="Your message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark mt-2">Contact us</button>
+          </form>
+        </div>
+
+        <!-- Newsletter card -->
+        <div class="col-12 col-md-5">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Our Newsletters</h5>
+              <p class="card-text">
+                Stay updated with our latest news and exclusive offers.
+                Subscribe to our newsletter by entering your email below.
+              </p>
+              <div class="mb-3">
+                <label for="newsletter-email" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="newsletter-email"
+                  placeholder="you@example.com"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
