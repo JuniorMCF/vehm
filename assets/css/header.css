@@ -12,20 +12,20 @@ header {
 }
 
 .main-header.scrolled {
-  background-color: white;
+  background-color: var(--white);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .main-header .nav-link {
-  color: white !important;
+  color: var(--white) !important;
   transition: color 0.3s ease;
 }
 
 .main-header.scrolled .nav-link {
-  color: black !important;
+  color: var(--black) !important;
 }
 .offcanvas-menu .nav-link {
-  color: black !important;
+  color: var(--black) !important;
 }
 .logo {
   filter: brightness(0) invert(1);
@@ -40,17 +40,17 @@ header {
   background-color: transparent;
   border: none;
   font-size: 1.8rem;
-  color: white;
+  color: var(--white);
   transition: color 0.3s ease;
 }
 
 .main-header.scrolled .menu-toggle {
-  color: black;
+  color: var(--black);
 }
 /**end header container**/
 
 nav a:hover {
-  color: black;
+  color: var(--black);
 }
 .nav-item-wrapper {
   position: relative;

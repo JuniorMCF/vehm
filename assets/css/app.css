@@ -2,6 +2,10 @@
    VARIABLES GLOBALES
 ================================================== */
 :root {
+  --primary: #659191;
+  --secondary: #98b9ba;
+  --accent: #cddce5;
+  --darkPrimary: #375050;
   --white: #fff;
   --black: #000;
   --darkGray: #444;
@@ -26,6 +30,10 @@
   --gray-900: #212529;
   --error: #f54a45;
   --success: #7dc67d;
+
+  --border-radius-rounded: 25px;
+  --border-radius-md: 10px;
+
 }
 
 /* ==================================================
@@ -38,11 +46,13 @@
   margin: 0;
   padding: 0;
 }
-
+body{
+  min-height: 1000px;
+  height: 100%;
+}
 html,
 body {
-  height: 100%;
-  min-height: 200vh;
+  
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-display: swap;
